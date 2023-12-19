@@ -1,0 +1,197 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:pixel;
+    src: url(pixel.ttf);
+}
+.page1{
+    background-color: rgb(30, 29, 29);
+    margin: 0%;
+    border-style: dotted;
+    border-width: 10px;
+    border-color: azure;
+    text-align: center;
+    height: 100vh;
+
+}
+
+.heading{
+    color: white;
+    text-align: center;
+    background-color: rgb(71, 74, 74);
+    height:20%;
+    padding: 20px;
+    font-family: pixel;
+    font-size: 30px;
+}
+
+.fc:hover{
+    color: rgb(113, 176, 120);
+}
+
+.description{
+    color: white;
+    text-align: center;
+    font-family:pixel;
+    padding: 25px;
+    height:30%;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.description2{
+    text-align: center;
+    font-family:pixel;
+    height:30%;
+    font-size: 40px;
+    padding-bottom: 200px;
+}
+a{
+    color: white;
+    font-family:pixel;
+    font-size: 40px;
+    text-decoration: none;
+   
+}
+
+
+.link{
+    text-align: center;
+    margin:auto;
+    border-radius: 50px;
+    width:50%;
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(3, 3, 3);
+    padding:15px;   
+
+}
+
+.link:active{
+    background-color: rgb(247, 245, 245);
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    
+
+}
+
+.link:hover{
+    box-shadow: 0px 7px 6px rgb(252, 253, 252);
+}
+
+a:active{
+    color: rgb(3, 0, 0);
+}
+.page2{
+    background-color: rgb(44, 123, 123);
+    margin: 0;
+   
+}
+.heading2{
+    color: aliceblue;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family:pixel;
+    font-size: 40px;
+    animation-name: colorchange;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes colorchange {
+    50% {color: black;}
+    
+    
+}
+
+@keyframes spin {
+    50% {transform: rotatex(360deg);}
+    
+}
+
+
+#subheading{
+    color: aliceblue;
+    text-align: center;
+    font-family:pixel;
+    font-size: 20px;
+    margin-left: 3%;
+
+}
+
+#start{
+    margin:auto ;
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    border-radius: 25%;
+    
+    margin-top: 50px;
+}
+#buttext{
+    font-size:30px;
+    text-align: center;
+    margin-top: 10px;
+
+   
+  
+}
+
+.game{
+    width: 600px;
+    height: 320px;
+    border-color: aliceblue;
+    border-width: 3px;
+    border-style: solid;
+    margin: auto;
+    
+}
+#bar{
+    height: 30px;
+    width: 595px;
+    background-color: black;
+   
+    top: 195px;
+    position: relative;
+}
+#ingame{
+    text-align: center;
+    font-family: pixel;
+    color: aliceblue;
+}
+#wheel{
+
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 50%;
+    border-color: black;
+    border-width: 3px solid;
+    top: 50px;
+    position: relative;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes move {
+    50% {transform:translate(490px);}
+    
+    
+}
+#wheel:hover{
+    animation-name: spin2;
+    animation-duration: 0.5s;
+    animation-iteration-count:infinite;
+}
+@keyframes spin2{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#incircle{
+    color: aliceblue;
+    text-align: center;
+    font-size: larger;
+}
